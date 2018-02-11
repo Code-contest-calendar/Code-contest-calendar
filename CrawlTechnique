@@ -1,0 +1,91 @@
+function codeChef(){
+ //1.Crawl into [1]
+  website: https:www.codechef.com/contests;  //---[1]
+  All the tables are under the heading Present Contests, Past Contests, Future Contests
+  Under Present Contests
+  Inside the heading <table></table> which has the class="dataTable" which contains the data, so we have to crawl into the data;
+  <thead></thead>
+    has --code name  start end-- defined to their positions
+  <tbody></tbody>
+    It has two <tr></tr>-- this means there are two contests in the present contests
+    One <tr>
+      has four <td></td>
+      Contest name , Contest Link, Start date and End date respectively
+    Second <tr></tr> has the same four <td></td>
+}
+
+function hackerRank(){
+  
+  // Crawl into https://www.hackerrank.com/contests
+  
+  class="active_contests active-contest-container fnt-wt-600"
+      This has the <h5></h5> which has the heading of the contest category, that is the Active Competitions
+      This has the class called ul class="contests-active" with unique data-react id
+        Under this haeding , you have n competitions which have their data under n <li></li> with n unique data-react id
+          Inside the each <li></li> which has the class name class=" contest-list-view-mdB"
+            Each <li></li> has two <div></div> , one which initially appears; one which appears after opening the tab;
+            Let's concentarte on the first </div>, this gives us the contest name, start date and link to the contest
+              This <div></div> has three <div></div> which has contest name , date, link to the contests
+        
+}
+
+function hackerEarth(){
+  
+}
+function spoj(){
+  
+Initially crawl into the website below and then,
+http://www.spoj.com/contests/
+Crawl into the <body></body>
+	under which you find a <div></div>which is a class="content"
+	this class has five <div> which first three are heading, menu, content, out of which we need content-- and all of these are under class="container"with different ids
+		the third <div></div>, that is under the id='header' 
+		Under this,there is a <div></div> that is a class="row", this has only present and future mostly!!
+			This class="row" has only two <div></div>, both are under the class="col-md-6", out of which the first one is the running contest and the second one is future contest
+					The first one has the heading - <h2>Running contests and the table <table></table> class="table-table condensed"
+				 This heading inturn has two things- <thead></thead> and <tbody></tbody>
+					<thead></thead>
+					This has <tr></tr>
+					This obviuosly has the headings- NAME START END
+					<tbody></tbody>
+					This has n <tr></tr>, if there are n contests
+					It has three <td></td>
+						The first <td> has the link and the name of the contest
+						The second <td> has the start date
+						The third <td> has the end date...
+			This is similar for the future contest(did not properly check)
+		This is the end of the future contest.
+	Under the class='contest' id='content' has 
+	<table class="table table-condensed"></table>
+	This has  <thead></thead> and <tbody></tbody> and the rest is similar to the prsent contests
+	
+		
+
+
+}
+
+function leetCode(){
+  
+}
+
+function codeEval(){
+}
+
+function codeForces(){
+  
+}
+
+function euler(){
+  
+}
+
+function codeWars(){
+  
+}
+
+function codinGame(){
+}
+
+function coderByte(){
+  
+}
